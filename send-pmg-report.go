@@ -91,6 +91,7 @@ func main() {
 			mailParts := strings.Split(fields[2], "@")
 			args := []string{
 				"pmgqm",
+				"send",
 				"-receiver",
 				fields[2],
 				"-timespan",
