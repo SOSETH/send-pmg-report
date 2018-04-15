@@ -109,11 +109,15 @@ func main() {
 			fmt.Printf("%q \n", args)
 			if *send {
 				fmt.Printf("Sending report for %q \n", fields[2])
+				var cmd *exec.Cmd
 				if *sudo {
-					exec.Command("sudo", args...)
+					cmd = exec.Command("sudo", args...)
 				} else {
-					exec.Command("pmgqm", args[1:]...)
+					cmd = exec.Command("pmgqm", args[1:]...)
 				}
+				cmd.Stdout = os.Stdout
+				cmd.Stderr = os.Stderr
+				cmd.Run()
 			}
 		}
 	}
