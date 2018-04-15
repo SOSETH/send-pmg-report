@@ -1,0 +1,6 @@
+redirectedDomains:
+  - domain: lists.example.com
+    destination: spammod@example.com
+redirectedTargets:
+  - target: someimportantuser@example.com
+    destination: spammod@example.com
