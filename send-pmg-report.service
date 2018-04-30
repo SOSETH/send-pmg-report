@@ -1,0 +1,10 @@
+[Unit]
+Description=Manually send spam reports to users of this gateway
+
+[Service]
+ExecStart=/opt/spamreport/send-pmg-report -exec
+Type=oneshot
+WorkingDirectory=/opt/spamreport
+
+[Install]
+WantedBy=multi-user.target

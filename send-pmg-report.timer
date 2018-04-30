@@ -1,0 +1,8 @@
+[Unit]
+Description=Send spam reports once per week
+
+[Timer]
+OnCalendar=Sun *-*-* 23:00:00
+
+[Install]
+WantedBy=timers.target
