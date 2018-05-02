@@ -1,0 +1,4 @@
+debian/*.service /lib/systemd/system/
+debian/send-pmg-report.timer /lib/systemd/system/
+obj-*/bin/send-pmg-report /usr/bin/
+config.yaml /etc/send-pmg-report.yaml

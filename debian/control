@@ -1,0 +1,16 @@
+Source: send-pmg-report
+Section: devel
+Priority: extra
+Maintainer: Maximilian Falkenstein <mfalkenstein@sos.ethz.ch>
+Build-Depends: debhelper (>= 10), dh-golang, golang-any, dh-systemd
+Standards-Version: 3.9.8
+Homepage: https://github.com/SOSETH/send-pmg-report
+Vcs-Browser: https://github.com/SOSETH/send-pmg-report
+Vcs-Git: https://github.com/SOSETH/send-pmg-report.git
+
+Package: send-pmg-report
+Architecture: any
+Built-Using: ${misc:Built-Using}
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Send a customized spam report on Proxmox Mailgateway

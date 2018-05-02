@@ -1,0 +1,11 @@
+autoreconf.after
+autoreconf.before
+*.log
+*.substvars
+tmp
+send-pmg-report
+send-pmg-report.pre*
+send-pmg-report.post*
+.debhelper
+debhelper-build-stamp
+files

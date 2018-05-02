@@ -2,9 +2,9 @@
 Description=Manually send spam reports to users of this gateway
 
 [Service]
-ExecStart=/opt/spamreport/send-pmg-report -exec
+ExecStart=/usr/bin/send-pmg-report -exec -config /etc/send-pmg-report.yaml
 Type=oneshot
-WorkingDirectory=/opt/spamreport
+WorkingDirectory=/etc
 
 [Install]
 WantedBy=multi-user.target
